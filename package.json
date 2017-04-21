@@ -1,14 +1,12 @@
 {
   "name": "react-feature",
-  "version": "1.0.0-alpha.0",
-  "description": "Simple ACL for React",
-  "main": "index.js",
-  "devDependencies": {
-    "react-scripts": "0.8.1"
-  },
+  "version": "1.0.0-alpha.1",
   "dependencies": {
-    "react": "15.4.1",
-    "react-dom": "15.4.1"
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
