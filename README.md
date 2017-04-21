@@ -1,1 +1,1 @@
-# react-feature
+# react-feature ![node version](https://img.shields.io/node/v/react-feature.svg) [![Build Status](https://travis-ci.org/pawelgalazka/react-feature.svg?branch=master)](https://travis-ci.org/pawelgalazka/react-feature) [![npm version](https://badge.fury.io/js/react-feature.svg)](https://badge.fury.io/js/react-feature)
