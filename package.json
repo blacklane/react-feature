@@ -2,7 +2,7 @@
   "name": "react-feature",
   "version": "1.0.0-alpha.1",
   "description": "Simple feature flip mechanism for React",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pawelgalazka/react-feature.git"
@@ -13,17 +13,48 @@
     "url": "https://github.com/pawelgalazka/react-feature/issues"
   },
   "homepage": "https://github.com/pawelgalazka/react-feature#readme",
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore test.js",
+    "lint": "eslint src",
+    "test": "npm run lint && npm run build && jest --env=jsdom",
+    "clean": "rm -rf node_modules"
+  },
   "dependencies": {
     "prop-types": "15.5.8",
     "react": "15.5.4"
   },
   "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-core": "6.16.0",
+    "babel-eslint": "7.0.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-2": "6.16.0",
+    "babel-register": "6.16.3",
+    "eslint": "3.6.1",
+    "eslint-config-standard": "6.2.0",
+    "eslint-config-standard-jsx": "3.2.0",
+    "eslint-config-standard-react": "4.2.0",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-react": "6.3.0",
+    "eslint-plugin-standard": "2.0.1",
     "enzyme": "2.8.2",
+    "jest": "16.0.2",
     "react-dom": "15.5.4",
-    "react-scripts": "0.9.5",
     "react-test-renderer": "15.5.4"
   },
-  "scripts": {
-    "test": "react-scripts test --env=jsdom"
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-standard",
+      "eslint-config-standard-react"
+    ],
+    "parser": "babel-eslint"
   }
 }
