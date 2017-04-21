@@ -1,6 +1,6 @@
-# react-feature ![node version](https://img.shields.io/node/v/react-feature.svg) [![Build Status](https://travis-ci.org/pawelgalazka/react-feature.svg?branch=master)](https://travis-ci.org/pawelgalazka/react-feature) [![npm version](https://badge.fury.io/js/react-feature.svg)](https://badge.fury.io/js/react-feature)
+# react-feature [![Build Status](https://travis-ci.org/pawelgalazka/react-feature.svg?branch=master)](https://travis-ci.org/pawelgalazka/react-feature) [![npm version](https://badge.fury.io/js/react-feature.svg)](https://badge.fury.io/js/react-feature)
 
-## Installation
+## Setup
 
 ```
 npm install react-feature --save
@@ -10,6 +10,12 @@ or
 
 ```
 yarn add react-feature
+```
+
+and then
+
+```javascript
+import { Feature } from 'react-feature'
 ```
 
 ## Basic usage
