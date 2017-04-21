@@ -1,7 +1,14 @@
 {
   "name": "react-feature",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Simple feature flip mechanism for React",
+  "keywords": [
+    "react",
+    "feature",
+    "flip",
+    "toggle",
+    "flag"
+  ],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
