@@ -24,5 +24,6 @@ export function Feature ({name, config, children}) {
 
 Feature.propTypes = {
   name: PropTypes.string.isRequired,
-  config: PropTypes.object.isRequired
+  config: PropTypes.object.isRequired,
+  children: PropTypes.any
 }
