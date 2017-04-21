@@ -3,6 +3,10 @@
   "version": "1.0.0-alpha.1",
   "description": "Simple feature flip mechanism for React",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawelgalazka/react-feature.git"
+  },
   "author": "Pawel Galazka",
   "license": "MIT",
   "bugs": {

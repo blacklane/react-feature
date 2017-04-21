@@ -58,3 +58,11 @@ const FeatureContainer = connect(
 
 export default FeatureContainer
 ```
+
+and then use `<FeatureContainer>` instead:
+
+```jsx
+<FeatureContainer name='banner:head'>
+ <strong>Some html related to the feature</strong>
+</FeatureContainer>
+```
