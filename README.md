@@ -72,3 +72,18 @@ and then use `<FeatureContainer>` instead:
  <strong>Some html related to the feature</strong>
 </FeatureContainer>
 ```
+
+## Usage with config file
+
+```jsx
+import { Feature } from 'react-feature'
+import config from './config'
+
+const FeatureContainer({name, children}) => (
+  <Feature name={name} config={config}>
+    {children}
+  </Feature>
+)
+
+export default FeatureContainer
+```
