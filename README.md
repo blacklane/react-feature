@@ -79,7 +79,7 @@ and then use `<FeatureContainer>` instead:
 import { Feature } from 'react-feature'
 import config from './config'
 
-const FeatureContainer({name, children}) => (
+const FeatureContainer = ({name, children}) => (
   <Feature name={name} config={config}>
     {children}
   </Feature>
