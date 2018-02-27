@@ -12,11 +12,11 @@ export function Feature ({name, config, children}) {
   }
 
   if (hasNegation && !activeFeatures.includes(featureName)) {
-    return <div>{children}</div>
+    return <React.Fragment>{children}</React.Fragment>
   }
 
   if (!hasNegation && activeFeatures.includes(featureName)) {
-    return <div>{children}</div>
+    return <React.Fragment>{children}</React.Fragment>
   }
 
   return null
