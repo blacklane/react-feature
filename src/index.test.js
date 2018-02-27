@@ -1,7 +1,10 @@
 /* eslint-env jest */
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 import { Feature } from './index'
+
+configure({adapter: new Adapter()})
 
 describe('<Feature>', () => {
   it('should render feature content if feature active', () => {
