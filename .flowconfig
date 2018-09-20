@@ -1,0 +1,8 @@
+[options]
+include_warnings=true
+
+[ignore]
+.*/node_modules/
+
+[lints]
+all=error

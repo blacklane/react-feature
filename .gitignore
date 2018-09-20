@@ -13,3 +13,7 @@ yarn-error.log*
 
 # other
 /lib
+
+dist
+.docz
+coverage

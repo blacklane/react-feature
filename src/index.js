@@ -1,29 +1,33 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+// @flow
+// we don't need import React from "react", because we do not use JSX
+// $FlowFixMe
+import PropTypes from "prop-types";
 
-export function Feature ({name, config, children}) {
-  const activeFeatures = Object.keys(config).filter(feature => config[feature])
+/*::
+import type { Node } from "react";
+type Props = {
+  name: string,
+  config: {[string]: boolean},
+  children: Node
+}
+*/
 
-  let featureName = name
-  const hasNegation = name[0] === '!'
+export function Feature({ name, config, children } /*: Props */) {
+  const activeFeatures = Object.keys(config).filter(feature => config[feature]);
+  const hasNegation = name[0] === "!";
 
   if (hasNegation) {
-    featureName = name.slice(1)
+    name = name.slice(1);
+    if (activeFeatures.indexOf(name) === -1) return children;
+  } else {
+    if (activeFeatures.indexOf(name) !== -1) return children;
   }
 
-  if (hasNegation && !activeFeatures.includes(featureName)) {
-    return <React.Fragment>{children}</React.Fragment>
-  }
-
-  if (!hasNegation && activeFeatures.includes(featureName)) {
-    return <React.Fragment>{children}</React.Fragment>
-  }
-
-  return null
+  return null;
 }
 
 Feature.propTypes = {
   name: PropTypes.string.isRequired,
-  config: PropTypes.object.isRequired,
-  children: PropTypes.any
-}
+  config: PropTypes.objectOf(PropTypes.bool).isRequired,
+  children: PropTypes.node.isRequired
+};
