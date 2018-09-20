@@ -1,6 +1,6 @@
 {
-  "name": "react-feature",
-  "version": "2.0.1",
+  "name": "@blacklane/react-feature",
+  "version": "2.1.0",
   "description": "Simple feature flip mechanism for React",
   "keywords": [
     "react",
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pawelgalazka/react-feature.git"
+    "url": "git+https://github.com/blacklane/react-feature.git"
   },
   "author": "Pawel Galazka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pawelgalazka/react-feature/issues"
+    "url": "https://github.com/blacklane/react-feature/issues"
   },
-  "homepage": "https://github.com/pawelgalazka/react-feature#readme",
+  "homepage": "https://github.com/blacklane/react-feature#readme",
   "main": "dist/react-feature.js",
   "umd:main": "dist/react-feature.umd.js",
   "module": "dist/react-feature.m.js",
